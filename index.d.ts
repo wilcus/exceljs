@@ -1508,7 +1508,7 @@ export namespace stream {
             level: number; // compression only
             memLevel: number; // compression only
             strategy: number; // compression only
-            dictionary: Buffer | NodeJS.TypedArray | DataView | ArrayBuffer; // deflate/inflate only, empty dictionary by default
+            dictionary: Buffer | DataView | ArrayBuffer; // deflate/inflate only, empty dictionary by default
         }
 
 		interface WorkbookStreamWriterOptions extends WorkbookWriterOptions {
